@@ -25,6 +25,16 @@ public class ProductManager {
         return productList;
     }
     
+    public double getPriceFromList(String item){
+        double x = 0.0;
+        for (Product product : productList){
+            if (product.getProductName().equals(item)){
+                x = product.getProductPrice();
+            }
+        }
+        return x;
+    }
+    
     public void addProduct(Product product){
         productList.add(product);
     }

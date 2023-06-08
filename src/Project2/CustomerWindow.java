@@ -34,7 +34,8 @@ public class CustomerWindow extends UserWindow{
             }
         });
         
-        checkoutButton = new JButton("Checkout");   // check out bnuttion
+        // Checkout button
+        checkoutButton = new JButton("Checkout");   
         checkoutButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ShoppingCart cart = ShoppingCart.getInstance();
@@ -45,8 +46,8 @@ public class CustomerWindow extends UserWindow{
                 for (String item : cartItems) {
                     message.append("- ").append(item).append("\n");
                 }
-                message.append("Total Cost: $" + cart.getTotalCost());
-
+                message.append("Total Cost: $" + cart.calculateTotalCost());
+                
                 JOptionPane.showMessageDialog(CustomerWindow.this, message.toString());
                 
                 StringBuilder recipt = new StringBuilder();
