@@ -3,11 +3,14 @@ package Project2;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class CustomerWindow extends UserWindow{
     private JButton viewCartButton;
+    private JButton checkoutButton;
     
     public CustomerWindow(Customer customer){
         super(customer);
@@ -30,8 +33,30 @@ public class CustomerWindow extends UserWindow{
                 JOptionPane.showMessageDialog(CustomerWindow.this, message.toString());
             }
         });
+        
+        checkoutButton = new JButton("Checkout");   // check out bnuttion
+        checkoutButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                ShoppingCart cart = ShoppingCart.getInstance();
+                List<String> cartItems = cart.getCartItems();
+
+                StringBuilder message = new StringBuilder();
+                message.append("Cart Items:\n");
+                for (String item : cartItems) {
+                    message.append("- ").append(item).append("\n");
+                }
+                message.append("Total Cost: $" + cart.getTotalCost());
+
+                JOptionPane.showMessageDialog(CustomerWindow.this, message.toString());
+                
+                StringBuilder recipt = new StringBuilder();
+                recipt.append("Order for: " + user.getUsername() + "\nEmail: " + user.getEmail() + "\nOrder Confirmed");
+                JOptionPane.showMessageDialog(CustomerWindow.this, recipt);
+            }
+        });
 
         setLayout(new FlowLayout());
         add(viewCartButton);
+        add(checkoutButton);
     }
 }

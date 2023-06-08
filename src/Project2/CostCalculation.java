@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Project2;
 
-/**
- *
- * @author Will
- */
-public class CostCalculation {
+import java.util.List;
+
+public class CostCalculation{
+    private List<Product> items;
+    private double totalCost;
     
+    public CostCalculation(){
+        
+    }
+    
+    public double calculateTotal(){
+        double temp = 0.0;
+        
+        return totalCost;
+    }
 }

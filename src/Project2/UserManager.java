@@ -4,7 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserManager {
-    private List<User> userList = new ArrayList<>();
+    private List<User> userList;
+    
+    public UserManager(){
+        userList = new ArrayList<>();
+        userList.add(new Admin("Will", "password", "will@store.com"));
+        userList.add(new Customer("Customer Test", "test", "test@test.com"));
+    }
     
     public UserManager(String username, String password, String email){
         for (User user : userList){
