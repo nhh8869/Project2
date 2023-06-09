@@ -5,16 +5,24 @@
         <group>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/UserManager.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/ProductManagementWindow.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/test/Project2/ProductTest.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/test/Project2/UserTest.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/Product.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/test/Project2/ProductManagerTest.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/test/Project2/AdminTest.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/User.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/Customer.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/test/Project2/CustomerTest.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/test/Project2/ShoppingCartTest.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/LoginWindow.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/ProductManager.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/test/Project2/UserManagerTest.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/BrowseWindow.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/CustomerWindow.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/MainWindow.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/UserWindow.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/AdminWindow.java</file>
+            <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/RemoveProductWindow.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/AddProductWindow.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/OnlineShoppingSystem.java</file>
             <file>file:/G:/Documents/NetBeansProjects/Project2/src/Project2/ShoppingCart.java</file>
