@@ -9,6 +9,7 @@ import javax.swing.JFrame;
 public class AdminWindow extends UserWindow{
     private JButton manageProductsButton;
     
+    //  Admin window
     public AdminWindow(Admin admin) {
         super(admin);
         setTitle("Admin Window");
@@ -25,6 +26,7 @@ public class AdminWindow extends UserWindow{
             }
         });
 
+        //  Add components
         setLayout(new FlowLayout());
         add(manageProductsButton);
     }

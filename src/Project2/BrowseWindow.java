@@ -20,6 +20,7 @@ public class BrowseWindow extends JFrame{
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
+        // Creates model of products
         products = new ProductManager();
         // Create product list
         DefaultListModel<String> model = new DefaultListModel<>();

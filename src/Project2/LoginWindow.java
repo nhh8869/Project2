@@ -20,12 +20,14 @@ public class LoginWindow extends JFrame{
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
+        //  Creating labels
         JLabel usernameLabel = new JLabel("Username:");
         usernameField = new JTextField(20);
         
         JLabel passwordLabel = new JLabel("Password:");
         passwordField = new JPasswordField(20);
         
+        // Create login button
         loginButton = new JButton("Login");
         loginButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -33,9 +35,11 @@ public class LoginWindow extends JFrame{
                 char[] passwordChars = passwordField.getPassword();
                 String password = new String(passwordChars);
                 
+                // Call auth function to select user
                 UserManager authenticator = new UserManager();
                 User user = authenticator.userAuth(username, password);
 
+                //  User checks
                 if (user != null) {
                     // Create a user-specific window based on their role
                     UserWindow userWindow;
@@ -53,6 +57,8 @@ public class LoginWindow extends JFrame{
                 }
             }
         });
+        
+        //  Adds to layout
         setLayout(new GridLayout(3, 2));
         add(usernameLabel);
         add(usernameField);

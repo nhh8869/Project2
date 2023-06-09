@@ -9,6 +9,7 @@ import javax.swing.JFrame;
 public class ProductManagementWindow extends JFrame{
     private JButton addProductButton;
     
+    //  Product management window
     public ProductManagementWindow() {
         setTitle("Product Management");
         setSize(400, 300);

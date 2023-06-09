@@ -15,6 +15,7 @@ public class MainWindow extends JFrame{
         setSize(500, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        //  Create login button
         loginButton = new JButton("Login");
         loginButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
@@ -23,6 +24,7 @@ public class MainWindow extends JFrame{
             }
         });
         
+        //  Create Browse button
         browseButton = new JButton("Browse Products");
         browseButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -31,6 +33,7 @@ public class MainWindow extends JFrame{
             }
         });
         
+        // Add to layout
         setLayout(new FlowLayout());
         add(loginButton);
         add(browseButton);

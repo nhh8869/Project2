@@ -10,11 +10,13 @@ public class ShoppingCart {
     private List<String> cartItems;
     private double totalCost;
 
+    //  Cart contructor
     private ShoppingCart() {
         cartItems = new ArrayList<>();
         totalCost = 0.0;
     }
 
+    //  Get instance method
     public static ShoppingCart getInstance() {
         if (instance == null) {
             instance = new ShoppingCart();
@@ -22,23 +24,28 @@ public class ShoppingCart {
         return instance;
     }
 
+    //  Add product to cart
     public void addProduct(String product) {
         cartItems.add(product);
         System.out.println(product);
     }
 
+    //  Get list of cart items
     public List<String> getCartItems() {
         return cartItems;
     }
     
+    // Get total cost
     public double getTotalCost(){
         return this.totalCost;
     }
     
+    //  Set total cost
     public void setTotalCost(double cost){
         this.totalCost += cost;
     }
     
+    // Method to extract price from string containing both name and price
     private double extractPriceFromString(String string){
         String pattern = "\\$([\\d.]+)";
         Pattern regex = Pattern.compile(pattern);
@@ -52,6 +59,7 @@ public class ShoppingCart {
     return 0.0;
     }
 
+    // Calculate total cost of cart
     public double calculateTotalCost(){
         double total = 0.0;
         for (String item : cartItems){
@@ -60,6 +68,7 @@ public class ShoppingCart {
         return total;
     }
     
+    // Get product price from product name
     private double getProductPrice(String name){
         ProductManager productM = new ProductManager();
         List<Product> productList = productM.getAllProducts();

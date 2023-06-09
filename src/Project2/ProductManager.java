@@ -6,6 +6,7 @@ import java.util.List;
 public class ProductManager {
     private List<Product> productList;
 
+    //  Adds products to list in contructor
     public ProductManager() {
         productList = new ArrayList<>();
         // Add some initial products
@@ -21,10 +22,12 @@ public class ProductManager {
         productList.add(new Product("Polo", 15.0));
     }
 
+    //  Get products 
     public List<Product> getAllProducts() {
         return productList;
     }
     
+    //  Get price from product list using name
     public double getPriceFromList(String item){
         double x = 0.0;
         for (Product product : productList){
@@ -35,10 +38,12 @@ public class ProductManager {
         return x;
     }
     
+    //  Adds product
     public void addProduct(Product product){
         productList.add(product);
     }
     
+    //  Changes name
     public void changeProductName(String productName, String newProductName){
         for (Product product : productList){
             if (product.getProductName().equals(productName)){
@@ -47,6 +52,7 @@ public class ProductManager {
         }
     }
     
+    //  Changes price
     public void changeProductPrice(String productName, double newProductPrice){
         for (Product product : productList){
             if (product.getProductName().equals(productName)){
@@ -55,6 +61,7 @@ public class ProductManager {
         }
     }
     
+    // Remove product
     public void removeProduct(String productName){
         for (Product product : productList){
             if (product.getProductName().equals(productName)){

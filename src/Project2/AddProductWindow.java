@@ -14,6 +14,7 @@ public class AddProductWindow extends JFrame {
     private JTextField productPriceField;
     private JButton addButton;
 
+    //  Add product window
     public AddProductWindow() {
         setTitle("Add Product");
         setSize(300, 200);
