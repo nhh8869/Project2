@@ -69,7 +69,7 @@ public class ShoppingCart {
     }
     
     // Get product price from product name
-    private double getProductPrice(String name){
+    public double getProductPrice(String name){
         ProductManager productM = new ProductManager();
         List<Product> productList = productM.getAllProducts();
 

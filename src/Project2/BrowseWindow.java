@@ -51,5 +51,4 @@ public class BrowseWindow extends JFrame{
         add(new JScrollPane(productList), BorderLayout.CENTER);
         add(addToCartButton, BorderLayout.SOUTH);
     }
-    
 }

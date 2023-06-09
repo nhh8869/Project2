@@ -1,6 +1,7 @@
 package Project2;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class UserManager {
@@ -33,10 +34,13 @@ public class UserManager {
     }
     
     //  Deletes a user
-    public void deleteUser(String username){
-        for (User user : userList){
-            if (user.getUsername() == username){
-                userList.remove(user);
+    public void deleteUser(String username) {
+        Iterator<User> iterator = userList.iterator();
+        while (iterator.hasNext()) {
+            User user = iterator.next();
+            if (user.getUsername().equals(username)) {
+                iterator.remove();
+                break;
             }
         }
     }
