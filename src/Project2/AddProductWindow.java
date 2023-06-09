@@ -37,7 +37,7 @@ public class AddProductWindow extends JFrame {
                 // Add the new product to the product list
                 ProductManager productManager = new ProductManager();
                 productManager.addProduct(new Product(productName, productPrice));
-
+                
                 JOptionPane.showMessageDialog(AddProductWindow.this, "Product added successfully.");
 
                 // Close the add product window

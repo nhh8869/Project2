@@ -27,6 +27,8 @@ public class BrowseWindow extends JFrame{
             model.addElement(product.getProductName() + " $" + product.getProductPrice());
         }
         
+        
+        
         productList = new JList<>(model);
 
         // Create add to cart button
@@ -48,4 +50,5 @@ public class BrowseWindow extends JFrame{
         add(new JScrollPane(productList), BorderLayout.CENTER);
         add(addToCartButton, BorderLayout.SOUTH);
     }
+    
 }
